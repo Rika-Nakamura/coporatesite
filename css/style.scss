@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'メイリオ', 'Meiryo', sans-serif;
+    color: #000;
+    background-color: #F0F0F0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+
+    .logo {
+        width: 100px;
+        height: 25px;
+        margin-right: 30px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+
+            li {
+                line-height: 1.7;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .headerWrap {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1032px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    .contact {
+        right: 0;
+        top: 0;
+        background-color: #000;
+        color: #fff;
+        padding: 31px 76px;
+    }
+
+}
+
+.mainvisual {
+    position: relative;
+    width: 100%;
+    min-height: 92vh;
+    background: url(../img/mainvisual.jpg)center / cover;
+    margin-bottom: 120px;
+}
+
+.wrapper {
+    max-width: 1032px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+section {
+
+    h2 {
+        font-size: 36px;
+        letter-spacing: .3em;
+        margin-bottom: 10px;
+
+    }
+
+    .lead {
+        line-height: 1.7;
+        padding-bottom: 36px;
+        position: relative;
+    }
+
+    hr {
+        width: 40px;
+        height: 1px;
+        margin-bottom: 50px;
+
+    }
+
+}
+
+.newsSec {
+    .newsWrap {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            padding: 20px 40px 20px 0px;
+            position: relative;
+            display: inline-block;
+            margin-right: 1px solid #000;
+        }
+    }
+
+
+    .date {
+        line-height: 1.7em;
+        margin-bottom: 16px;
+    }
+
+    .title {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    span {
+        font-size: 12px;
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        padding: 1px 6px;
+        margin-left: 10px;
+    }
+
+    margin-bottom: 120px;
+}
+
+.aboutSec {
+    margin-bottom: 120px;
+
+    .innerWrap {
+        display: flex;
+
+        &>p {
+            flex-basis: 55%;
+        }
+
+        &>div {
+            flex-basis: 45%;
+            padding: 180px 5% 0 5%;
+
+            p {
+                line-height: 2.1em;
+            }
+        }
+    }
+
+}
+
+.businessSec {
+    margin-bottom: 120px;
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+
+        .left {
+            flex-basis: 46%;
+            margin-top: 100px;
+
+            .text {
+                font-weight: bold;
+                line-height: 1.7em;
+                margin: 0 0 10px 18px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 8px;
+                    height: 1px;
+                    background-color: #000;
+                    position: absolute;
+                    top: 50%;
+                    left: -18px;
+                }
+            }
+
+        }
+
+        .right {
+            flex-basis: 46%;
+
+            .text {
+                font-weight: bold;
+                line-height: 1.7em;
+                margin: 0 0 10px 18px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 8px;
+                    height: 1px;
+                    background-color: #000;
+                    position: absolute;
+                    top: 50%;
+                    left: -18px;
+                }
+            }
+        }
+
+
+    }
+
+    .item {
+        margin-bottom: 50px;
+    }
+}
+
+.companySec {
+    display: flex;
+    height: 750px;
+    position: relative;
+
+
+    .text {
+        width: 55%;
+        background-color: #fff;
+        color: #000;
+        padding: 100px 8% 100px 6%;
+        position: absolute;
+
+        dl {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            dt {
+                font-weight: 400;
+                width: 20%;
+                margin-top: 10px;
+                line-height: 1.5em;
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+            }
+
+            dd {
+                width: 80%;
+                line-height: 1.5em;
+                margin-top: 10px;
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+            }
+
+            .add {
+                margin-left: 20%;
+            }
+        }
+    }
+
+    .photo {
+        width: 53%;
+        position: absolute;
+        top: 115px;
+        right: 0;
+
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+
+}
+
+footer {
+    padding: 40px 0 20px;
+    background-color: #fff;
+
+    .footerSec {
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 26px;
+
+            .logo {
+                width: 100px;
+                height: 25px;
+                margin-right: 60px;
+            }
+
+
+        }
+
+        p {
+            .small {
+                font-size: 12px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        height: 80px;
+
+        .headerWrap {
+            display: block;
+            padding: 16px;
+
+            .logo {
+                width: 80px;
+                height: 20px;
+            }
+
+            h1 {
+                margin-bottom: 7px;
+            }
+
+            nav {
+                ul {
+                    li {
+                        &:first-of-type {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact {
+            display: none;
+        }
+    }
+
+    .mainvisual {
+        min-height: 90vh;
+        margin-bottom: 80px;
+    }
+
+    section {
+
+        .lead {
+            padding-bottom: 24px;
+        }
+
+        hr {
+            width: 40px;
+            height: 1px;
+            margin-bottom: 34px;
+
+            &:first-of-child {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .newsSec {
+        margin-bottom: 90px;
+
+        .newsWrap {
+            display: block;
+        }
+    }
+
+    .aboutSec {
+        margin-bottom: 0;
+
+        .innerWrap {
+            display: block;
+
+            >p {
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+
+            >div {
+                padding: 30px 16px 80px 16px
+            }
+        }
+    }
+
+    .businessSec {
+        margin-bottom: 80px;
+
+        .flex {
+            display: block;
+            padding: 0;
+
+            .left {
+                margin-top: 0;
+
+                .item {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .right {
+                .item {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .companySec {
+        flex-direction: column;
+        height: auto;
+        position: static;
+
+        .text {
+            width: 100%;
+            padding: 40px 8% 40px 6%;
+            position: static;
+            margin-bottom: 20px;
+
+            dl {
+                display: block;
+                flex-direction: column;
+
+                dt {
+                    margin-top: 20px;
+                    width: 100%;
+                }
+
+                dd {
+                    margin-top: 5px;
+                    width: 100%;
+
+                    &:first-of-type {
+                        margin-top: 5px;
+                    }
+
+                    .add {
+                        margin-left: 14px;
+                    }
+                }
+
+            }
+        }
+
+
+        .photo {
+            width: 100%;
+            padding: 0;
+            position: static;
+        }
+    }
+
+    .footerSec {
+        div {
+            display: block;
+
+            .footer-logo {
+                margin-bottom: 10px;
+            }
+
+            .text {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
