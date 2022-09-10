@@ -245,7 +245,7 @@ footer .footerSec p .small {
   font-size: 12px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   header {
     height: 80px;
   }
@@ -361,5 +361,4 @@ footer .footerSec p .small {
   .footerSec div .text {
     margin-bottom: 40px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
