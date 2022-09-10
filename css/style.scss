@@ -4,12 +4,13 @@ html {
     box-sizing: border-box;
 }
 
-body {
+body * {
     font-size: 14px;
     font-family: 'メイリオ', 'Meiryo', sans-serif;
     color: #000;
     background-color: #F0F0F0;
     width: 100%;
+    outline: red 1px solid;
 }
 
 img {
@@ -432,7 +433,7 @@ footer {
 
                 dd {
                     margin-top: 5px;
-                    width: 100%;
+                    max-width: 100%;
 
                     &:first-of-type {
                         margin-top: 5px;
