@@ -8,7 +8,7 @@ body {
   font-family: "メイリオ", "Meiryo", sans-serif;
   color: #000;
   background-color: #F0F0F0;
-  width: 100%;
+  max-width: 100%;
 }
 
 img {
@@ -42,11 +42,14 @@ header .headerWrap {
   margin: 0 auto;
 }
 header .contact {
-  right: 0;
-  top: 0;
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
   background-color: #000;
   color: #fff;
-  padding: 31px 76px;
+  font-size: 0.75rem;
+  display: inline-block;
+  text-align: center;
 }
 
 .mainvisual {
@@ -361,4 +364,5 @@ footer .footerSec p .small {
   .footerSec div .text {
     margin-bottom: 40px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
